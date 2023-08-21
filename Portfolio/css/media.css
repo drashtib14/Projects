@@ -1,0 +1,85 @@
+@media only screen and (max-width:500px){
+    .navbar ul{
+        display: none;
+    }
+
+    .navbar i{
+        display: block;
+    }
+
+    .home_container{
+        grid-template-columns: 0fr 1.5fr;
+    }
+
+    .home_right h1{
+        max-width: 90%;
+    }
+
+    .about_container,.skills_container{
+        padding: 0px 50px;
+    }
+
+    .about_detail{
+        grid-template-columns: 1fr;
+        padding: 30px 0px;
+    }
+    
+    .skills_container{
+        padding-top: 50px;
+    }
+
+    .skills-detail{
+        grid-template-columns: 1fr;
+        padding: 50px 70px;
+    }
+
+    .project_heading{
+        padding: 50px;
+    }
+
+    .project-1,.project-2,.project-3{
+        grid-template-columns: 1fr;
+        /* row-gap: 50px; */
+        margin: 50px 0px;
+    }
+
+    .projects{
+        padding: 0px 60px;
+    }
+
+    .project_txt-2{
+        padding: 50px 20px;
+    }
+
+    .footer-img{
+        height: 550px;
+        background-position: top right;
+    }
+
+    .contact_container{
+        padding: 0 30px;
+        font-size: 15px;
+    }
+
+    .footer_form{
+        padding: 70px 35px;
+    }
+
+    .footer_form input{
+        padding: 18px 100px;
+    }
+
+    .footer_form button{
+        padding: 18px 110px;
+        margin-left: 35px;
+    }
+
+    .footer_form textarea{
+        padding: 18px 20px;
+    }
+
+    .footer_form .x{
+        padding: 18px 102px;
+    }
+    
+}
