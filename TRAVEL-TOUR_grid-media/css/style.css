@@ -124,10 +124,6 @@ button{
     position: relative;
 }
 
-.manu_home ul{
-    margin: 0px 0px;
-}
-
 .submanu_home li,.submanu_pages li,.submanu_tour-list li,.submanu_pricing li,.submanu_system li,.submanu_blog li{
     display: block;
     padding: 4px;
@@ -141,7 +137,8 @@ button{
     position: absolute;
     top: 25px;
     left: 16px;
-    display: none;
+    /* display: none; */
+    opacity: 0;
 }
 
 .submanu_pages{
@@ -173,8 +170,9 @@ button{
 }
 
 .manu_home:hover .submanu_home,.manu_pages:hover .submanu_pages,.manu_tour-list:hover .submanu_tour-list,.manu_pricing:hover .submanu_pricing,.manu_system:hover .submanu_system,.manu_blog:hover .submanu_blog{
-    display: block;
-    transition: 1s;
+    /* display: block; */
+    opacity: 1;
+    transition: 0.5s;
 }
 
 .submanu_home li,.submanu_pages li,.submanu_tour-list li,.submanu_pricing li,.submanu_system li,.submanu_blog li{
