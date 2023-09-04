@@ -1,0 +1,218 @@
+@media only screen and (max-width:500px){
+    .bars{
+        display: block;
+    }
+
+    .nav-list{
+        display: none;
+    }
+
+    .slider-content{
+        top: 32%;
+        left: 20px;
+        width: 50%;
+        padding: 20px;
+    }
+
+    .slider-content h1{
+        font-size: 24px;
+    }
+
+    .slider-content button{
+        padding: 8px 25px;
+        margin-top: 10px;
+        font-size: 6px;
+    }
+
+    .slider-content-right{
+        display: none;
+    }
+
+    .car-stock_txt{
+        display: block;
+        padding: 50px 40px;
+    }
+
+    .border-line{
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .car-stock_txt h1{
+        font-size: 25px;
+    }
+
+    .cars_container{
+        padding: 0px 50px;
+    }
+
+    .cars a{
+        font-size: 22px;
+    }
+
+    .cars_txt-1,.cars_txt-2,.cars_txt-3{
+        padding: 15px 40px;
+        width: 100%;
+    }
+
+    .cars_txt-1 p,.cars_txt-2 p,.cars_txt-3 p{
+        font-size: 18px;
+    }
+
+    .cars{
+        height: 400px;
+        margin-bottom: 50px;
+    }
+
+    .car-stock_btn button{
+        padding: 13px 190px;
+        transform: translateY(-60px)
+    }
+
+    .car-stock{
+        height: 1700px;
+    }
+
+    .calculate-content{
+        padding: 0px 0px;
+    }
+
+    .phone{
+        transform: translateY(0px) translateX(0px);
+        width: 100%;
+        text-align: center;
+    }
+
+    .calculator_txt{
+        padding: 70px 45px;
+        width: 100%;
+    }
+
+    .calculator_txt h1{
+        font-size: 45px;
+        width: 100%;
+        padding: 25px 0px;
+    }
+
+    .calculator_txt p{
+        font-size: 12px;
+    }
+    
+    .calculator_txt span{
+        font-size: 12px;
+        width: 100%;
+        display: block;
+        padding-top: 25px;
+    }
+
+    .popular_cars_container{
+        padding: 120px 51px;
+    }
+
+    .popular-cars_txt p{
+        font-size: 13px;
+    }
+
+    .popular-cars_txt h1{
+        font-size: 50px;
+    }
+
+    .car-left{
+        height: 260px;
+        width: 400px;
+    }
+
+    .conversation_container{
+        padding: 75px 40px;
+    }
+
+    .convo-top h1{
+        font-size: 45px;
+        line-height: 45px;
+    }
+
+    .convo-right_txt{
+        height: 210px;
+    }
+
+    .convo-bottom{
+        display: block;
+    }
+
+    .convo-top h1:last-child{
+        padding-top: 30px;
+    }
+
+    .convo-left_txt{
+        width: 100%;
+    }
+
+    .convo-left_txt h1{
+        font-size: 24px;
+    }
+
+    .convo-left_txt button{
+        margin-bottom: 20px;
+    }
+
+    .price_container{
+        padding: 10px 40px;
+        padding-left: 50px;
+    }
+
+    .price_top{
+        display: block;
+    }
+
+    .price_1,.price_2,.price_3{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .price_1 span,.price_2 span,.price_3 span{
+        font-size: 45px;
+    }
+
+    .price_1 h1,.price_2 h1,.price_3 h1{
+        font-size: 28px;
+    }
+
+    .price_1 p,.price_2 p,.price_3 p{
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .price_bottom{
+        width: 100%;
+        margin-bottom: 70px;
+    }
+
+    .footer{
+        justify-content: space-between;
+        padding: 115px 40px;
+    }
+
+    .footer_left_txt h1{
+        font-size: 20px;
+        line-height: 30px;
+        padding-bottom: 50px;
+    }
+    
+    .footer_form input{
+        width: 110%;
+    }
+
+    .footer_right_txt p{
+        margin-top: 10px;
+        font-size: 10px;
+    }
+
+    .footer_contact span{
+        font-size: 12px;
+    }
+
+    .copyrights{
+        display: block;
+        text-align: center;
+    }
+}

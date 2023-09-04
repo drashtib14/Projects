@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Montserrat:wght@300&family=Poppins:wght@300;400;500;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+::selection{
+    background-color: #000;
+    color: #fff;
+}
+
+.navbar{
+    background-color: #000;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+}
+
+.nav-list a{
+    color: #fff;
+    font-family: 'poppins';
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.nav-list ul{
+    display: flex;
+}
+
+.nav-list li{
+    padding-right: 30px;
+}
+
+.bars{
+    color: #fff;
+    font-size: 20px;
+    display: none;
+}
+
+.home{
+    background-color: #812e8f;
+    padding: 36px 30px;
+}
+
+.slider-img{
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-img img{
+    transform: scale(1.2);
+}
+
+.slider-content{
+    color: #fff;
+    background: rgba(128, 0, 128, 0.572);
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    width: 40%;
+    padding: 50px;
+}
+
+.slider-content h1{
+    font-family: 'poppins';
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.slider-content button,.car-stock_btn button,.calculator_txt button,.convo-left_txt button,.price_bottom button,.footer_form button{
+    background-color: #000;
+    color: #fff;
+    padding: 20px 45px;
+    font-weight: bold;
+    margin-top: 50px;
+    transition: .45s;
+}
+
+.slider-content button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.slider-content-right{
+    position: absolute;
+    right: 0;
+    top: 60%;
+    font-family: 'poppins';
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+}
+
+.counting{
+    background-color: #000;
+    width: 70px;
+    height: 70px;
+    border-radius: 3px;
+    padding-top: 14px;
+}
+
+.counting span,.counting p{
+    animation: animate 1s linear infinite alternate-reverse;
+}
+
+.buying{
+    background-color: #80b541;
+    width: 70px;
+    height: 70px;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.car-stock{
+    background-color: #f4f3f5;
+    height: 900px;
+    font-family: "Poppins", Helvetica, Arial, sans-serif;
+    padding-top: 50px;
+}
+
+.car-stock_txt{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.car-stock_txt h1{
+    font-weight: 500;
+}
+
+.border-line{
+    height: 2px;
+    width: 70%;
+    background-color: #dbdbdb;
+}
+
+.cars-img{
+    overflow: hidden;
+}
+
+.cars-img img{
+    transition: .50s;
+}
+
+.cars-img img:hover{
+    transform: scale(1.1);
+}
+
+.cars a{
+    color: #000;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.cars{
+    height: 450px;
+    width: 400px;
+    background-color: #fff;
+}
+
+.cars_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0px 30px;
+}
+
+.cars_txt-1,.cars_txt-2,.cars_txt-3{
+    padding: 15px 40px;
+    width: 80%;
+}
+
+.cars_txt-2{
+    width: 100%;
+}
+
+.cars_txt-1 p,.cars_txt-2 p,.cars_txt-3 p{
+    font-size: 28px;
+    padding-top: 7px;
+}
+
+.car-stock_btn{
+    text-align: center;
+    padding-top: 25px;
+}
+
+.car-stock_btn button{
+    padding: 15px 150px;
+    font-size: 16px;
+}
+
+.calculate-content{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Poppins", Helvetica, Arial, sans-serif;
+    padding: 0px 60px;
+}
+
+.phone{
+    transform: translateY(-50px) translateX(90px);
+    width: 40%;
+}
+
+.calculator_txt{
+    padding: 70px 90px;
+    width: 60%;
+}
+
+.calculator_txt h5{
+    color: #00aab1;
+}
+
+.calculator_txt h1{
+    font-size: 45px;
+    font-weight: 500;
+    width: 60%;
+    padding: 25px 0px;
+}
+
+.calculator_txt p{
+    background-color: #e6f5f6;
+    display: inline;
+    font-size: 14px;
+}
+
+.calculator_txt span{
+    font-size: 14px;
+    width: 70%;
+    display: block;
+    padding-top: 25px;
+}
+
+.calculator_txt button{
+    padding: 15px 40px;
+    font-family: 'jost';
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.popular_cars_container{
+    background-color: #000;
+    padding: 120px 90px;
+    color: #fff;
+}
+
+.popular-cars_txt,.conversation_container,.price_container,.footer,.copyrights{
+    font-family: 'poppins';
+}
+
+.popular-cars_txt p{
+    font-size: 15px;
+}
+
+.popular-cars_txt h1{
+    font-size: 60px;
+    padding-bottom: 60px;
+}
+
+.popular_cars{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    font-family: 'poppins';
+}
+
+.car-left{
+    height: 510px;
+    width: 720px;
+    position: relative;
+}
+
+.car-left::after,.car-top::after,.car-bottom::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: inherit;
+    background: linear-gradient(rgba(0, 0, 0, 0),rgba(13, 18, 26, 0.619));
+}
+
+.car-top::after,.car-bottom::after{
+    height: 248px;
+    width: 400px;
+}
+
+.car-top,.car-bottom{
+    height: 260px;
+    width: 400px;
+    padding-bottom: 13px;
+    position: relative;
+}
+
+.car-left h1,.car-top h2,.car-bottom h2{
+    font-weight: 500;
+    position: absolute;
+    bottom: 35px;
+    left: 30px;
+    z-index: 1;
+}
+
+.car-left a,.car-top a,.car-bottom a{
+    color: #fff;
+}
+
+.conversation_container{
+    padding: 55px 70px;
+}
+
+.convo-top{
+    padding-bottom: 20px;
+}
+
+.convo-bottom{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.convo-top h1{
+    font-size: 60px;
+}
+
+.convo-top h1:last-child{
+    transform: translateY(-22px);
+}
+
+.convo-left_txt,.convo-right_txt{
+    width: 40%;
+}
+
+.convo-right_txt{
+    height: 300px;
+    width: 350px;
+}
+
+.convo-left_txt h1{
+    font-weight: 500;
+}
+
+.convo-left_txt p{
+    font-size: 13px;
+    padding-top: 15px;
+}
+
+.convo-left_txt button{
+    font-family: 'jost';
+    font-size: 17px;
+    padding: 11px 35px;
+}
+
+.convo_border{
+    height: 2px;
+    width: 100%;
+    background-color: #dbdbdb;
+    margin-top: 70px;
+}
+
+.price_container{
+    padding: 50px;
+    padding-left: 150px;
+}
+
+.price_top{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.price_1,.price_2,.price_3{
+    width: 30%;
+}
+
+.price_1 span,.price_2 span,.price_3 span{
+    font-size: 60px;
+    color: #812e8f;
+    font-weight: 600;
+}
+
+.price_1 h1,.price_2 h1,.price_3 h1{
+    font-weight: 500;
+}
+
+.price_1 p,.price_2 p,.price_3 p{
+    width: 80%;
+    font-size: 14px;
+}
+
+.price_bottom{
+    text-align: center;
+    width: 90%;
+    margin-bottom: 50px;
+}
+
+.price_bottom button{
+    background-color: #812e8f;
+    padding: 12px 95px;
+    font-family: 'jost';
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin-top: 80px;
+}
+
+.footer{
+    background-color: #efedf0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 115px 0px;
+}
+
+.footer_left_txt h1{
+    font-weight: 500;
+    line-height: 38px;
+}
+
+.footer_logo{
+    margin-bottom: 50px;
+}
+
+.footer_right_txt h2{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.footer_form input{
+    border: none;
+    outline: none;
+    padding: 13px;
+    width: 240px;
+}
+
+.footer_form button{
+    padding: 8px 35px;
+    font-family: 'jost';
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: .30s;
+    margin-top: 15px;
+}
+
+.footer_form button:hover{
+    background-color: #414141;
+}
+
+.footer_right_txt p{
+    font-size: 12px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.footer_contact span{
+    padding-right: 20px;
+}
+
+.footer_border{
+    height: 1px;
+    width: 100%;
+    background-color: #d4d4d4;
+}
+
+.copyrights{
+    background-color: #efedf0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 60px;
+}
+
+.copyrights_top p{
+    font-size: 14px;
+}
+
+.copyrights_bottom i{
+    padding-right: 12px;
+}
+
+.copyrights_bottom a{
+    color: #000;
+}
+
+.copyrights_bottom a:last-child{
+    font-size: 30px;
+}
+
+/* animation */
+@keyframes animate{
+    0%{opacity: 1;}
+    100%{opacity: 0.3;}
+ }
