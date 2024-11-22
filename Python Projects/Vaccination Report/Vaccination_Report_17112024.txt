@@ -1,0 +1,34 @@
+
+                VACCINATION REPORT 
+===================================================
+Date:  17112024           Time:  15:23:14
+---------------------------------------------------
+Name: Drashti 
+Email: db@gmail.com 
+Age: 20 
+Gender: Female 
+Vaccine: vaccine 
+Vaccine Dose: 1st dose
+===================================================
+                VACCINATION REPORT 
+===================================================
+Date:  17112024           Time:  15:25:06
+---------------------------------------------------
+Name: Jimin 
+Email: jm@gmail.com 
+Age: 28 
+Gender: Male 
+Vaccine: vaccine name 
+Vaccine Dose: 2nd dose
+===================================================
+                VACCINATION REPORT 
+===================================================
+Date:  17112024           Time:  15:26:18
+---------------------------------------------------
+Name: Jin 
+Email: wwh@gmail.com 
+Age: 32 
+Gender: Male 
+Vaccine: vaccine name 
+Vaccine Dose: 1st dose
+===================================================
