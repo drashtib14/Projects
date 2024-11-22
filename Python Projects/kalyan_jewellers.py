@@ -10,7 +10,7 @@ product_grm = int(input("Enter product gram: "))
 print("-------------------------------------------------------------------\n")
 
 # calculation
-gold_price = 5752  # 1 gram
+gold_price = 5752  # per 1 gram
 print(f"Current Gold Price: {gold_price}")
 
 total_gold = product_grm * gold_price
