@@ -1,0 +1,53 @@
+﻿{% extends "testapplication/member_index.html" %}
+{% block content %}    
+<section class="content home">
+            <div class="block-header">
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-12">
+                        <h2>Notice List <small class="text-muted">Welcome to Digital Society</small></h2>
+                    </div>            
+                    <div class="col-lg-7 col-md-7 col-sm-12 text-right">
+                        <ul class="breadcrumb float-md-right">
+                            <li class="breadcrumb-item"><a href="{% url 'member-index' %}"><i class="zmdi zmdi-home"></i> Digital Society</a></li>
+                            <li class="breadcrumb-item">Notice</li>
+                            <li class="breadcrumb-item active">Notice List</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">                
+                <div class="blog-page">
+    <div class="row">
+        <div class="col-lg-9 col-md-12 left-box">
+            {% for n in nall %}
+            <div class="card single_post">
+                <div class="body">
+                    <h3 class="m-t-0 m-b-5"><a>{{n.notice_title}}</a></h3>
+                    <ul class="meta">
+                        <li><a><i class="zmdi zmdi-account col-blue"></i>Posted By: Chairman</a></li>
+                        <li><a><i class="zmdi zmdi-label col-cyan"></i>{{n.notice_category}}</a></li>
+                        <li><a><i class="zmdi zmdi-time col-green"></i>{{n.whenpublished}}</a></li>
+                    </ul>
+                </div>                    
+                <div class="body">
+                    {% if n.pic %}
+                    <div class="img-post m-b-15">
+                        <img src="{{n.pic.url}}" height="250" width="650" style="object-fit: cover;">
+                    </div>
+                    {% endif %}
+                    <!-- <p>{{n.notice_description}}</p> -->
+                    <p>{{ n.notice_description|linebreaks }}</p>
+
+                    <!-- <input type="hidden" name="complaint_id" value="{{ complaint.id }}">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="zmdi zmdi-thumb-up"></i>
+                    </button> -->
+                </div>
+            </div>   
+            {% endfor %}
+        </div>
+    </div>
+</div>
+</div>
+</section>
+{% endblock %}

@@ -1,0 +1,121 @@
+﻿{% extends "testapplication/index.html" %}
+{% block content %}      
+<section class="content home">
+            <div class="block-header">
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-12">
+                        <h2>Add Member <small class="text-muted">Welcome to Digital Society</small></h2>
+                    </div>            
+                    <div class="col-lg-7 col-md-7 col-sm-12 text-right">
+                        
+                        
+                        
+                        <ul class="breadcrumb float-md-right">
+                            <li class="breadcrumb-item"><a href="{% url 'index' %}"><i class="zmdi zmdi-home"></i> Digital Society</a></li>
+                            <li class="breadcrumb-item">Member</li>
+                            <li class="breadcrumb-item active">Add Member</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">                
+                
+<div class="row clearfix">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="card">
+            <div class="header">
+                <h2><strong>Add</strong> Member<small>Description text here...</small> </h2>
+            </div>
+                {% if s_msg %}
+                    <div class="alert alert-success" role="alert">
+                        {{s_msg}}
+                    </div>
+                {% endif %}
+
+                {% if e_msg %}
+                    <div class="alert alert-danger" role="alert">
+                        {{e_msg}}
+                    </div>
+                {% endif %}
+            <form action="{% url 'add-member' %}" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="body">
+                    <div class="row clearfix">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="First Name" name="firstname">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Last Name" name="lastname">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col-sm-3">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="House no" name="house_no">
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Block no" name="block_no">
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Contact no" name="contact_no">
+                            </div>                       
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="No of Family Members" name="no_family_members">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Enter Your Email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Blood Group" name="blood_group">
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Vehicle Details" name="vehicle_details">
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Job Description" name="job_description">
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="form-group">
+                                <input type="file" class="form-control" placeholder="Choose File" name="pic">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <textarea class="form-control" rows="4" placeholder="Enter Your Job Address.." name="job_address"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <button type="submit" class="btn btn-primary btn-round">Submit</button>
+                            <button type="reset" class="btn btn-default btn-round btn-simple">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+            </div>
+</section>
+{% endblock %}

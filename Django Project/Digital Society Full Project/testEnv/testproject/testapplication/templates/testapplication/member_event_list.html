@@ -1,0 +1,43 @@
+﻿{% extends "testapplication/member_index.html" %}
+{% block content %}    
+<section class="content home">
+            <div class="block-header">
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-12">
+                        <h2>Event List <small class="text-muted">Welcome to Digital Society</small></h2>
+                    </div>            
+                    <div class="col-lg-7 col-md-7 col-sm-12 text-right">
+                        <ul class="breadcrumb float-md-right">
+                            <li class="breadcrumb-item"><a href="{% url 'member-index' %}"><i class="zmdi zmdi-home"></i> Digital Society</a></li>
+                            <li class="breadcrumb-item">Event</li>
+                            <li class="breadcrumb-item active">Event List</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">                
+                <div class="blog-page">
+    <div class="row">
+        <div class="col-lg-9 col-md-12 left-box">
+            {% for e in eall %}
+            <div class="card single_post">
+                <div class="body">
+                    <h3 class="m-t-0 m-b-5"><a>{{e.event_title}}</a></h3>
+                    <ul class="meta">
+                        <li><a><i class="zmdi zmdi-account col-blue"></i>Posted By: Chairman</a></li>
+                        <!-- <li><a><i class="zmdi zmdi-label col-cyan"></i>{{e.notice_category}}</a></li> -->
+                        <li><a><i class="zmdi zmdi-time col-green"></i>{{e.whenpublished}}</a></li>
+                    </ul>
+                </div>                    
+                <div class="body">
+                    <p>{{ e.event_description|linebreaks }}</p>
+                    <p><b>Location: </b> {{ e.event_location }} <br> <b>Date:</b> {{ e.event_date }} <br> <b>Time:</b> {{ e.event_time }}</p>
+                </div>
+            </div>   
+            {% endfor %}
+        </div>
+    </div>
+</div>
+</div>
+</section>
+{% endblock %}

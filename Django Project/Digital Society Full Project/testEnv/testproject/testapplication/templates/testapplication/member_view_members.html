@@ -1,0 +1,162 @@
+﻿{% extends "testapplication/member_index.html" %}
+{% block content %}    
+<section class="content home">
+            <div class="block-header">
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-12">
+                        <h2>All Society Members <small class="text-muted">Welcome to Digital Society</small></h2>
+                    </div>            
+                    <div class="col-lg-7 col-md-7 col-sm-12 text-right">
+                    </button>
+                        
+                        <ul class="breadcrumb float-md-right">
+                            <li class="breadcrumb-item"><a href="{% url 'member-index' %}"><i class="zmdi zmdi-home"></i> Digital Society</a></li>
+                            <li class="breadcrumb-item">Society Members</li>
+                            <li class="breadcrumb-item active">All Society Members</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+    <div class="container-fluid">                
+        <div class="row clearfix">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="body">
+                        <ul class="nav nav-tabs padding-0">
+                            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#all">All</a></li>
+                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#ablock">A block</a></li>
+                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#bblock">B block</a></li>
+                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#cblock">C block</a></li>
+                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#dblock">D block</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-content m-t-10">
+                    <!-- All Members -->
+                    <div class="tab-pane active" id="all">
+                        <div class="row clearfix">
+                            {% for member in m_all %}
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="card xl-blue member-card doctor">
+                                    <div class="body">
+                                        <div class="member-thumb">
+                                            <img src="{{member.pic.url}}" class="img-fluid" alt="profile-image" style="height: 150px;">                             
+                                        </div>
+                                        <div class="detail">
+                                            <h5 class="m-b-0">{{member.firstname}} {{member.lastname}}</h5>
+                                            <p class="text-muted">{{member.contact_no}}</p>
+                                            <span class="text-muted">{{member.block_no}}/{{member.house_no}}</span>
+                                            <p class="text-muted">{{member.job_description}}</p>                        
+                                            <a href="profile.html" class="btn btn-default btn-round btn-simple">View Profile</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div> 
+                    </div>
+                    <!-- A Block Members -->
+                <div class="tab-pane" id="ablock">
+                    <div class="row clearfix">
+                        {% for member in a_block %}
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="card xl-blue member-card doctor">
+                                <div class="body">
+                                    <div class="member-thumb">
+                                        <img src="{{ member.pic.url }}" class="img-fluid" alt="profile-image" style="height: 150px;">
+                                    </div>
+                                    <div class="detail">
+                                        <h5 class="m-b-0">{{ member.firstname }} {{ member.lastname }}</h5>
+                                        <p class="text-muted">{{ member.contact_no }}</p>
+                                        <span class="text-muted">{{ member.block_no }}/{{ member.house_no }}</span>
+                                        <p class="text-muted">{{ member.job_description }}</p>
+                                        <a href="profile.html" class="btn btn-default btn-round btn-simple">View Profile</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <!-- B Block Members -->
+                <div class="tab-pane" id="bblock">
+                    <div class="row clearfix">
+                        {% for member in b_block %}
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="card xl-blue member-card doctor">
+                                <div class="body">
+                                    <div class="member-thumb">
+                                        <img src="{{ member.pic.url }}" class="img-fluid" alt="profile-image" style="height: 150px;">
+                                    </div>
+                                    <div class="detail">
+                                        <h5 class="m-b-0">{{ member.firstname }} {{ member.lastname }}</h5>
+                                        <p class="text-muted">{{ member.contact_no }}</p>
+                                        <span class="text-muted">{{ member.block_no }}/{{ member.house_no }}</span>
+                                        <p class="text-muted">{{ member.job_description }}</p>
+                                        <a href="profile.html" class="btn btn-default btn-round btn-simple">View Profile</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <!-- C Block Members -->
+                <div class="tab-pane" id="cblock">
+                    <div class="row clearfix">
+                        {% for member in c_block %}
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="card xl-blue member-card doctor">
+                                <div class="body">
+                                    <div class="member-thumb">
+                                        <img src="{{ member.pic.url }}" class="img-fluid" alt="profile-image" style="height: 150px;">
+                                    </div>
+                                    <div class="detail">
+                                        <h5 class="m-b-0">{{ member.firstname }} {{ member.lastname }}</h5>
+                                        <p class="text-muted">{{ member.contact_no }}</p>
+                                        <span class="text-muted">{{ member.block_no }}/{{ member.house_no }}</span>
+                                        <p class="text-muted">{{ member.job_description }}</p>
+                                        <a href="profile.html" class="btn btn-default btn-round btn-simple">View Profile</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <!-- D Block Members -->
+                <div class="tab-pane" id="dblock">
+                    <div class="row clearfix">
+                        {% for member in d_block %}
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="card xl-blue member-card doctor">
+                                <div class="body">
+                                    <div class="member-thumb">
+                                        <img src="{{ member.pic.url }}" class="img-fluid" alt="profile-image" style="height: 150px;">
+                                    </div>
+                                    <div class="detail">
+                                        <h5 class="m-b-0">{{ member.firstname }} {{ member.lastname }}</h5>
+                                        <p class="text-muted">{{ member.contact_no }}</p>
+                                        <span class="text-muted">{{ member.block_no }}/{{ member.house_no }}</span>
+                                        <p class="text-muted">{{ member.job_description }}</p>
+                                        <a href="profile.html" class="btn btn-default btn-round btn-simple">View Profile</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+
+            </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

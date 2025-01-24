@@ -1,0 +1,132 @@
+﻿{% extends "testapplication/member_index.html" %}
+
+{% block content%}
+<section class="content home">
+            <div class="block-header">
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-12">
+                        <h2>Profile <small class="text-muted">Welcome to Digital Society</small></h2>
+                    </div>            
+                    <div class="col-lg-7 col-md-7 col-sm-12 text-right">
+                        <button class="btn btn-white btn-icon btn-round d-none d-md-inline-block float-right m-l-10" type="button">
+                            <i class="zmdi zmdi-edit"></i>
+                        </button>
+                        <ul class="breadcrumb float-md-right">
+                            <li class="breadcrumb-item"><a href="{% url 'member-index' %}"><i class="zmdi zmdi-home"></i> Digital Society</a></li>
+                            <li class="breadcrumb-item">{{uid.role}}</li>
+                            <li class="breadcrumb-item active">Profile</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">                
+                
+    <div class="row clearfix profile-page">
+        <div class="col-lg-4 col-md-12">
+            <div class="card profile-header">
+                <div class="body text-center">
+                    <div class="profile-image"> <img src="{{mid.pic.url}}" alt=""> </div>
+                    <div>
+                        <h4 class="m-b-0"><strong>{{mid.firstname}} {{mid.lastname}}</strong></h4>
+                        <span class="job_post">{{uid.role}}</span>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-round">Follow</button>
+                        <button class="btn btn-primary btn-round btn-simple">Message</button>
+                    </div>
+                    <p class="social-icon m-t-5 m-b-0">
+                        <a title="Twitter" href="javascript:void(0);"><i class="zmdi zmdi-twitter"></i></a>
+                        <a title="Facebook" href="javascript:void(0);"><i class="zmdi zmdi-facebook"></i></a>
+                        <a title="Google-plus" href="javascript:void(0);"><i class="zmdi zmdi-twitter"></i></a>
+                        <a title="Behance" href="javascript:void(0);"><i class="zmdi zmdi-behance"></i></a>
+                        <a title="Instagram" href="javascript:void(0);"><i class="zmdi zmdi-instagram "></i></a>
+                    </p>
+                </div>                    
+            </div>                               
+               
+        </div>
+        <div class="col-lg-8 col-md-12">
+            <div class="card">
+                <ul class="nav nav-tabs">
+                    <!-- <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#about">About</a></li> -->
+                    <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#Account">Account</a></li>                        
+                </ul>
+                <div class="tab-content">
+                    <!-- <div class="tab-pane body active" id="about">
+                        <p>As the Chairman of the Digital Society, {{mid.firstname}} {{mid.lastname}} is a visionary leader dedicated to fostering a sense of community and innovation. With a strong commitment to serving society members, {{mid.firstname}} has spearheaded initiatives that promote inclusivity, sustainability, and technological advancement. <br><br>
+                            Under {{mid.firstname}}'s leadership, the society has seen remarkable growth, including the implementation of modern facilities and digital platforms to enhance member engagement. With a background in management and a passion for community building, {{mid.firstname}} {{mid.lastname}} envisions a society where every member feels valued and empowered.</p>
+                        
+                        <br><br>
+                        <h6>Qualifications</h6>
+                        <hr>
+                        <ul class="list-unstyled">
+                            <li>
+                                <p><strong>Educational Background:</strong>  Bachelor’s in Public Administration, Certified Leadership Professional (CLP)</p>
+                            </li>
+                            <li>
+                                <p><strong>Leadership Experience:</strong> Over 10 years of experience in managing housing societies and leading community initiatives.</p>
+                            </li>
+                            <li>
+                                <p><strong>Achievements:</strong> Implemented a sustainable waste management system and organized annual cultural events that increased community participation by 40%.</p>
+                            </li>
+                            <li>
+                                <p><strong>Community Engagement:</strong> Active volunteer in local non-profit organizations and a mentor for youth development programs.</p>
+                            </li>
+                            <li>
+                                <p><strong>Skills:</strong> Exceptional communication, strategic planning, and team-building abilities.</p>
+                            </li>
+                        </ul>
+                    </div> -->
+                    <div class="tab-pane body active" id="Account">
+                        
+                        <form method="post" action="{% url 'change-password' %}">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Email" value="{{uid.email}}" readonly disabled>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Current Password" name="currentpassword">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="New Password" name="newpassword">
+                            </div>
+                            <input type="submit" class="btn btn-info btn-round" value="Save Changes">
+                        </form>
+
+                        <hr>
+                        <form method="post" action="{% url 'update-profile' %}" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <div class="row clearfix">
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="First Name" name="firstname" value="{{mid.firstname}}">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Last Name" name="lastname" value="{{mid.lastname}}">
+                                    </div>
+                                </div>                                    
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Contact no" name="contact_no" value="{{mid.contact_no}}">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="form-group">
+                                        <input type="file" class="form-control" name="pic">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <button class="btn btn-primary btn-round">Save Changes</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>                        
+                </div>
+            </div>              
+        </div>
+    </div>
+            </div>
+</section>
+{% endblock %}
