@@ -1,0 +1,13 @@
+
+----------- Pizza and Pasta Bill --------------
+
+Date: 2025-03-24
+
+Total payment received today: 107.95
+Total pizzas sold: 7
+Total pastas sold: 4
+Total 1.5L soft drinks given: 1
+Total bruschetta given: 0
+Total chocco brownies ice cream given: 0
+
+Bye Bye!!!

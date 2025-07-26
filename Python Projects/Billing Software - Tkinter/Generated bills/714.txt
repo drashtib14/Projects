@@ -1,0 +1,22 @@
+			**Welcome Customer**
+Bill Number: 714
+Customer Name: Yoongi oppaaaa
+Phone Number: nae oppa nae oppa nae sarangaeyo oppa
+******************************************************************
+Product			Quantity			Price
+******************************************************************
+Hair Spray			2			300 Rs
+Body Lotion			1			200 Rs
+Rice				7			210 Rs
+Sugar				7			630 Rs
+Maza				7			210 Rs
+Coke				7			210 Rs
+Pepsi				7			210 Rs
+Sprite				7			210 Rs
+Dew					7			210 Rs
+******************************************************************
+Cosmetic Tax				500 Rs
+Grocery Tax				42.0 Rs
+Drinks Tax				84.0 Rs
+Total Bill 				 2576.0
+******************************************************************

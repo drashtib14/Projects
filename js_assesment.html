@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #e1e1e1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container{
+            background-color: #fff;
+            height: 500px;
+            width: 350px;
+            border-top: 6px solid #f5ba1a;
+            padding: 20px;  
+        }
+
+        .container-1{
+            /* border: 2px solid; */
+            height: 67vh;
+        }
+
+        .heading{
+            text-align: center;
+            font-size: 17px;
+        }
+
+        input, select{
+            padding: 5px;
+            border: none;
+        }
+
+        input:focus{
+            outline: none;
+        }
+
+        form{
+            font-size: 14px;
+        }
+
+        .flex{
+            display: flex;
+            gap: 15px;
+        }
+
+        .fa{
+            border: none;
+            border-right: 1px solid;
+            padding: 5px;
+        }
+
+        .border{
+            border: 1px solid;
+            margin-bottom: 20px;
+        }
+
+        button{
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: #f5ba1a;
+            color: #fff;
+        }
+
+        .btm{
+            line-height: 33px;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="">
+        <div class="container">
+            <div class="container-1">
+            <div class="heading">
+                <h2>Responsive Registration Form</h2>
+            </div>
+
+            
+                <div class="border">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <input type="email" placeholder="Email" size="35"> <br>
+                </div>
+                
+                <div class="border">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    <input type="password" placeholder="Password" size="35"><br>
+                </div>
+
+                <div class="border">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    <input type="password" placeholder="Re-type Password" size="35"><br>
+                </div>
+
+                <div class="flex">
+                    <div class="border" style="width: 50%;">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <input type="text" placeholder="First Name" size="10">
+                    </div>
+
+                    <div class="border"  style="width: 50%;">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <input type="text" placeholder="Last Name" size="10"><br>
+                    </div>
+                </div>
+
+            <div class="btm">
+                <input type="radio" name="z">Male
+                <input type="radio" name="z">Female
+                <br>
+
+                <select style="border: 1px solid; width: 100%;">
+                    <option value="" hidden>Select a country</option>
+                    <option value="">India</option>
+                    <option value="">USA</option>
+                    <option value="">UK</option>
+                    <option value="">Canada</option>
+                    <option value="">Australia</option>
+                    <option value="">South Korea</option>
+                </select>
+                <br>
+
+                <input type="checkbox" required>I agree with terms and conditions
+                <br>
+                <input type="checkbox">I want to receive the newsletter
+                <br>
+
+                <button>Register</button>
+            </div>
+        </div>
+        </div>
+    </form>
+    
+</body>
+</html>

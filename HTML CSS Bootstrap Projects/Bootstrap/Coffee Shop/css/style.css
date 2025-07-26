@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: #ffffff;
+}
+
+/* scroll */
+html ::-webkit-scrollbar{
+    width: 10px;
+}
+
+html ::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html ::-webkit-scrollbar-thumb{
+    background: #29a19c;
+    border-radius: 10px;
+}
+/* scroll */
+
+/* Fonts */
+.mont{
+    font-family: 'montserrat';
+}
+
+.grand-hotel{
+    font-family: 'Grand Hotel';
+}
+/* Fonts */
+
+.section-padding{
+    padding: 50px 0px;
+}
+
+/* bg colors */
+.bg-color1{
+    background-color: #222831;
+}
+
+.bg-color2{
+    background-color: #29a19c;
+}
+
+button{
+    border: none;
+}
+
+ul{
+    list-style: none;
+}
+
+/* navbar start */
+nav{
+    background-color: #222831;
+    font-weight: bold;
+}
+
+.home-li,.sec2,.icons{
+    position: relative;
+}
+
+.home-li:hover::before{
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    left: 9px;
+    width: 25px;
+    height: 3px;
+    background-color: #29a19c;
+}
+/* navbar end */
+
+/* image start */
+.mask1 {
+    /* -webkit-mask-image: url(images/Mask.svg); */
+    mask-image: url(../images/Mask.svg); 
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    transform: translateX(100px);
+}
+
+.mask1 img{
+    object-position: -88px;
+}
+
+.mask2{
+    mask-image: url(../images/Mask2.svg); 
+    mask-repeat: no-repeat;
+    mask-size: contain;
+}
+/* image end */
+
+/* parts start */
+.part1 h4{
+    letter-spacing: 2px;
+}
+
+.part1 p{
+    font-size: 14px;
+}
+
+.part2 h1{
+    line-height: 75px;
+}
+/* parts end */
+
+/* icons */
+.icon{
+    position: absolute;
+}
+
+.i1{
+    top: 120px;
+    left: 650px;
+}
+
+.i2{
+    top: 240px;
+    left: 520px;
+}
+
+.i3{
+    top: 390px;
+    left: 380px;
+}
+
+.i4{
+    top: -150px;
+    left: 0;
+}
+
+.i5{
+    top: 50px;
+    left: 180px;
+}
+
+.i6{
+    top: 120px;
+    left: 550px;
+}
+
+.i7{
+    top: 120px;
+    left: 1200px;
+}
+
+.i8{
+    top: 350px;
+    left: 490px;
+}
+
+.i9{
+    top: 450px;
+    left: 1200px;
+}
+
+.i10{
+    top: 500px;
+    left: 180px;
+}
+
+.i11{
+    top: 100px;
+    left: 80px;
+}
+
+.i12{
+    top: 150px;
+    left: 650px;
+}
+
+.i13{
+    top: 250px;
+    left: 1200px;
+}
+
+.i14{
+    top: 350px;
+    left: 640px;
+}
+
+.i15{
+    top: 20px;
+    left: 200px;
+}
+
+.i16{
+    top: 150px;
+    left: 1200px;
+}
+
+.i17{
+    top: 500px;
+    left: 1200px;
+}
+
+.i18{
+    top: 400px;
+    left: 180px;
+}
+
+.i19{
+    top: 200px;
+    left: 650px;
+}
+
+.i20{
+    top: 360px;
+    left: 1100px;
+}
+
+.icons1{
+    position: relative;
+}
+
+.i21{
+    top: -114px;
+    left: 0;
+}
+
+.itext{
+    top: 20%;
+    left: 40%;
+}
+
+.i22{
+    top: 80%;
+    left: 0;
+}
+
+.i23{
+    top: 150px;
+    left: 300px;
+    z-index: 1;
+}
+
+.i24{
+    top: 400px;
+    left: 300px;
+    z-index: 1;
+}
+
+.i25{
+    top: 150px;
+    left: 1000px;
+    z-index: 1;
+}
+
+.i26{
+    top: 400px;
+    left: 1000px;
+    z-index: 1;
+}
+
+.i27{
+    top: -125px;
+    left: 0;
+}
+/* icons */

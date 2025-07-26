@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    /* overflow-x: hidden; */
+}
+
+input,textarea{
+    border: 2px solid silver;
+}
+
+li{
+    list-style: none;
+}
+
+::selection{
+    background-color: #c87e6b;
+    color: #e7e4db;
+}
+.txtcolor {
+    color: #e7e4db !important;
+}
+
+.txtcolor-gray {
+    color: #484a4b !important;
+}
+
+.txtcolor-gold {
+    color: #765a33 !important;
+}
+
+.bgcolor {
+    background: #c87e6b !important;
+}
+
+.font-playfair{
+    font-family: 'Playfair Display';
+}
+
+.font-mont{
+    font-family: 'Montserrat Alternates';
+}
+
+.font-josefin{
+    font-family: 'Josefin Slab', serif;
+}
+
+
+@media (max-width: 768px){
+    .navbar-right{
+        display: none;
+    }
+}
+
+@media (max-width: 262px){
+    .logo img{
+        width: 90px;
+    }
+}

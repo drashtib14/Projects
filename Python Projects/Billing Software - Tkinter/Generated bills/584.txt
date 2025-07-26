@@ -1,0 +1,27 @@
+			**Welcome Customer**
+Bill Number: 584
+Customer Name: Yoongi
+Phone Number: 579256565
+******************************************************************Product			Quantity			Price
+******************************************************************
+Bath Soap			0			0 Rs
+Face Cream Price			2			100 Rs
+Face Wash			0			0 Rs
+Hair Spray			0			0 Rs
+Body Lotion			0			0 Rs
+Rice			2			60 Rs
+Food Oil			0			0 Rs
+Daal			0			0 Rs
+Wheat			0			0 Rs
+Sugar			0			0 Rs
+Maza			0			0 Rs
+Coke			0			0 Rs
+Pepsi			0			0 Rs
+Sprite			2			60 Rs
+Dew			3			90 Rs
+******************************************************************
+Cosmetic Tax				100 Rs
+Grocery Tax				3.0 Rs
+Drinks Tax				12.0 Rs
+Total Bill 				 337.0
+******************************************************************
